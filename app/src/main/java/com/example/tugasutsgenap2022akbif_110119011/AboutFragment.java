@@ -8,7 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
+//Identitas
+//Nama : Reihan Wiyanda
+//Kelas : IF-1
+//Nim   : 10119011
 public class AboutFragment extends Fragment {
 
 

@@ -9,7 +9,10 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class NavigationActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     NoteFragment noteFragment = new NoteFragment();

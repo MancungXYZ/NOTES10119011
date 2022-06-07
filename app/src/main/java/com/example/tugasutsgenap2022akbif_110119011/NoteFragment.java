@@ -2,14 +2,14 @@ package com.example.tugasutsgenap2022akbif_110119011;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class NoteFragment extends Fragment {
 
 

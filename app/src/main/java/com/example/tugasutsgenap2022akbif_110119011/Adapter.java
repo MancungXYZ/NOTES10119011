@@ -7,7 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class Adapter extends PagerAdapter {
     int[] layouts;
     LayoutInflater layoutInflater;

@@ -15,7 +15,10 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class EditActivity extends AppCompatActivity {
     DBHelper helper;
     EditText TxTitle, TxDetail,txtKateg;

@@ -10,7 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class CustomCursorAdapter extends CursorAdapter {
     private LayoutInflater layoutInflater;
 

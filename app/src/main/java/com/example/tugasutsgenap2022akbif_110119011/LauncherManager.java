@@ -2,7 +2,10 @@ package com.example.tugasutsgenap2022akbif_110119011;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class LauncherManager {
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;

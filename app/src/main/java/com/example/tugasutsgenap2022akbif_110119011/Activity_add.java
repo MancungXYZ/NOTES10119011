@@ -14,7 +14,10 @@ import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Kelas : IF-1
+//Nim   : 10119011
 public class Activity_add extends AppCompatActivity {
     DBHelper helper;
     EditText TxTitle, TxDetail, TxtKateg;

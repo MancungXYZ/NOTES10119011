@@ -25,7 +25,10 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     ListView listView;
     DBHelper helper;

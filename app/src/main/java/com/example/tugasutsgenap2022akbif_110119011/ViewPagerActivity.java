@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Nim   : 10119011
+//Kelas : IF-1
 public class ViewPagerActivity extends AppCompatActivity {
     Button button;
     ViewPager viewPager;
