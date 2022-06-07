@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class EditActivity extends AppCompatActivity {
     DBHelper helper;
-    EditText TxTitle, TxDetail;
+    EditText TxTitle, TxDetail,txtKateg;
     Button btnEdit;
     Toolbar toolbar;
     long id;
@@ -37,7 +37,7 @@ public class EditActivity extends AppCompatActivity {
 
         TxTitle = (EditText)findViewById(R.id.txTitle_Edit);
         TxDetail = (EditText)findViewById(R.id.txDetail_Edit);
-        btnEdit = findViewById(R.id.editnote);
+        txtKateg = (EditText)findViewById(R.id.txtKateg);
 
 
         getData();
@@ -47,9 +47,11 @@ public class EditActivity extends AppCompatActivity {
         Cursor cursor = helper.oneData(id);
         if(cursor.moveToFirst()){
             @SuppressLint("Range") String title = cursor.getString(cursor.getColumnIndex(DBHelper.row_title));
+//            @SuppressLint("Range") String categ = cursor.getString(cursor.getColumnIndex(DBHelper.row_kateg));
             @SuppressLint("Range") String detail = cursor.getString(cursor.getColumnIndex(DBHelper.row_note));
 
             TxTitle.setText(title);
+//            txtKateg.setText(categ);
             TxDetail.setText(detail);
         }
     }
@@ -65,10 +67,12 @@ public class EditActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.save_edit:
                 String title = TxTitle.getText().toString().trim();
+//                String catego = txtKateg.getText().toString().trim();
                 String detail = TxDetail.getText().toString().trim();
 
                 ContentValues values = new ContentValues();
                 values.put(DBHelper.row_title, title);
+//                values.put(DBHelper.row_kateg, catego);
                 values.put(DBHelper.row_note, detail);
 
                 if (title.equals("") && detail.equals("")){
@@ -82,7 +86,7 @@ public class EditActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.delete_edit:
                 AlertDialog.Builder builder = new AlertDialog.Builder(EditActivity.this);
-                builder.setMessage("This note will be deleted.");
+                builder.setMessage("Apakah Anda Yakin Ingin Menghapus Ini?.");
                 builder.setCancelable(true);
                 builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
                     @Override

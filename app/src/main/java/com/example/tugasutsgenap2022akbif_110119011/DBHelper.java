@@ -25,14 +25,14 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onCreate(SQLiteDatabase sqLiteDatabase) {
+    public void onCreate(SQLiteDatabase db) {
         String query = "CREATE TABLE " + table_name + "(" + row_id + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + row_title + " TEXT," + row_note + " TEXT, " + row_created + " TEXT)";
-        sqLiteDatabase.execSQL(query);
+                + row_title + " TEXT," + row_kateg + "TEXT, " + row_note + " TEXT, " + row_created + " TEXT)";
+        db.execSQL(query);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + table_name);
     }
 

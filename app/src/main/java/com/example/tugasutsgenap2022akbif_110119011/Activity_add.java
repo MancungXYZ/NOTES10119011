@@ -35,7 +35,7 @@ public class Activity_add extends AppCompatActivity {
 
         TxTitle = (EditText)findViewById(R.id.txTitle_Add);
         TxDetail = (EditText)findViewById(R.id.txDetail_Add);
-//        TxtKateg = (EditText)findViewById(R.id.txtKategori);
+        TxtKateg = (EditText)findViewById(R.id.txtKateg);
 
 
     }
@@ -52,6 +52,7 @@ public class Activity_add extends AppCompatActivity {
             case R.id.save_add:
                 String title = TxTitle.getText().toString().trim();
                 String detail = TxDetail.getText().toString().trim();
+                String categor = TxtKateg.getText().toString().trim();
 
                 //Get Date
                 Calendar calendar = Calendar.getInstance();
@@ -60,6 +61,7 @@ public class Activity_add extends AppCompatActivity {
 
                 ContentValues values = new ContentValues();
                 values.put(DBHelper.row_title, title);
+//                values.put(DBHelper.row_kateg, categor);
                 values.put(DBHelper.row_note, detail);
                 values.put(DBHelper.row_created, created);
 

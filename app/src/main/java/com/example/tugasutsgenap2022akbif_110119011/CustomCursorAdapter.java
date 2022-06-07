@@ -26,6 +26,7 @@ public class CustomCursorAdapter extends CursorAdapter {
         MyHolder holder = new MyHolder();
         holder.ListID = (TextView)v.findViewById(R.id.listID);
         holder.ListTitle = (TextView)v.findViewById(R.id.listTitle);
+//        holder.ListKategori = (TextView)v.findViewById((R.id.listKateg)) ;
         holder.ListDetail = (TextView)v.findViewById(R.id.listDetail);
         holder.ListCreated = (TextView)v.findViewById(R.id.listCreated);
         v.setTag(holder);
@@ -38,6 +39,7 @@ public class CustomCursorAdapter extends CursorAdapter {
         MyHolder holder = (MyHolder)view.getTag();
         holder.ListID.setText(cursor.getString(cursor.getColumnIndex(DBHelper.row_id)));
         holder.ListTitle.setText(cursor.getString(cursor.getColumnIndex(DBHelper.row_title)));
+//        holder.ListKategori.setText(cursor.getString((cursor.getColumnIndex(DBHelper.row_kateg))));
         holder.ListDetail.setText(cursor.getString(cursor.getColumnIndex(DBHelper.row_note)));
         holder.ListCreated.setText(cursor.getString(cursor.getColumnIndex(DBHelper.row_created)));
     }
@@ -47,5 +49,6 @@ public class CustomCursorAdapter extends CursorAdapter {
         TextView ListTitle;
         TextView ListDetail;
         TextView ListCreated;
+        TextView ListKategori;
     }
 }
