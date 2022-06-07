@@ -11,6 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:menu="@menu/add_menu"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary" />
         <EditText
             android:id="@+id/txID_Add"
             android:layout_width="match_parent"
@@ -28,6 +35,7 @@
             android:hint="Notes"
             android:inputType="textMultiLine"
             android:scrollbars="vertical"/>
+
     </LinearLayout>
 
 </LinearLayout>

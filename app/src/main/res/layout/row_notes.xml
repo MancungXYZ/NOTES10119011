@@ -19,8 +19,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Title"
-            android:textSize="17sp"
+            android:textSize="20sp"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/listKateg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textSize="17sp"/>
         <TextView
             android:id="@+id/listDetail"
             android:layout_width="fill_parent"

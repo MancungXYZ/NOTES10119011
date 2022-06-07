@@ -1,11 +1,14 @@
 package com.example.tugasutsgenap2022akbif_110119011;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.ContentValues;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -14,12 +17,17 @@ import java.util.Calendar;
 
 public class Activity_add extends AppCompatActivity {
     DBHelper helper;
-    EditText TxTitle, TxDetail;
+    EditText TxTitle, TxDetail, TxtKateg;
+    Button btnSimpan;
+    Toolbar toolbar;
     long id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         helper = new DBHelper(this);
 
@@ -27,9 +35,12 @@ public class Activity_add extends AppCompatActivity {
 
         TxTitle = (EditText)findViewById(R.id.txTitle_Add);
         TxDetail = (EditText)findViewById(R.id.txDetail_Add);
+//        TxtKateg = (EditText)findViewById(R.id.txtKategori);
 
 
     }
+
+
 
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.add_menu, menu);

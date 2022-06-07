@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/drawable/ic_baseline_note_add_24.xml" value="0.1945" />
-        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/activity_add.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/activity_add.xml" value="0.25" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/activity_add_note.xml" value="0.21" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/activity_edit.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -23,11 +23,11 @@
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/page1.xml" value="0.25" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/page2.xml" value="0.5" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/page3.xml" value="0.25" />
-        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/row_notes.xml" value="0.2" />
+        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/layout/row_notes.xml" value="0.33" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/add_menu.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/bottom_menu.xml" value="0.5" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/button_nav.xml" value="0.25" />
-        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/edit_menu.xml" value="0.1675213675213675" />
+        <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/edit_menu.xml" value="0.33" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/menu_main.xml" value="0.1675213675213675" />
         <entry key="..\:/Users/Reihan/AndroidStudioProjects/TugasUTSGenap2022AKBIF110119011/app/src/main/res/menu/menu_note.xml" value="0.1" />
       </map>

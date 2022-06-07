@@ -21,18 +21,18 @@ public class NavigationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, noteFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, aboutFragment).commit();
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment selectedFragment = null;
                 switch (item.getItemId()) {
-                    case R.id.noteFragment:
-                        selectedFragment = noteFragment;
-                        break;
                     case R.id.aboutFragment:
                         selectedFragment = aboutFragment;
+                        break;
+                    case R.id.noteFragment:
+                        selectedFragment = noteFragment;
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, selectedFragment).commit();

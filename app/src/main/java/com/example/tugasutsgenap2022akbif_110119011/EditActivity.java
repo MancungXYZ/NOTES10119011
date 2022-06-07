@@ -3,6 +3,7 @@ package com.example.tugasutsgenap2022akbif_110119011;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
@@ -11,12 +12,15 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class EditActivity extends AppCompatActivity {
     DBHelper helper;
     EditText TxTitle, TxDetail;
+    Button btnEdit;
+    Toolbar toolbar;
     long id;
     
     @Override
@@ -24,12 +28,17 @@ public class EditActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         helper = new DBHelper(this);
 
         id = getIntent().getLongExtra(DBHelper.row_id, 0);
 
         TxTitle = (EditText)findViewById(R.id.txTitle_Edit);
         TxDetail = (EditText)findViewById(R.id.txDetail_Edit);
+        btnEdit = findViewById(R.id.editnote);
+
 
         getData();
     }

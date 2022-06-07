@@ -14,6 +14,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String row_id = "_id";
     public static final String row_title = "Title";
     public static final String row_note = "Note";
+    public static final String row_kateg = "Kateg";
     public static final String row_created = "Created";
 
     private SQLiteDatabase db;

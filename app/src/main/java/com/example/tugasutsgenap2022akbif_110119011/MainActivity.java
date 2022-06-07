@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Toast.makeText(this, "Coming Soon", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
