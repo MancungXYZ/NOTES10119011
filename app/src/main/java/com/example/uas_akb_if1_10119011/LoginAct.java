@@ -15,7 +15,10 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Kelas : IF-1
+//Nim   : 10119011
 public class LoginAct extends AppCompatActivity {
     FirebaseAuth firebaseAuth;
     EditText email, password;

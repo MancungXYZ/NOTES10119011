@@ -12,7 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.firebase.auth.FirebaseAuth;
-
+//Identitas
+//Nama  : Reihan Wiyanda
+//Kelas : IF-1
+//Nim   : 10119011
 public class Keluar extends Fragment {
     FirebaseAuth firebaseAuth;
     @Override

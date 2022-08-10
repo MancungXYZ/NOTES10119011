@@ -63,8 +63,8 @@ public class Activity_add extends AppCompatActivity {
 
                 ContentValues values = new ContentValues();
                 values.put(DBHelper.row_title, title);
-                values.put(DBHelper.row_kateg, kateg);
-//                values.put(DBHelper.row_note, detail);
+//                values.put(DBHelper.row_kateg, kateg);
+                values.put(DBHelper.row_note, detail);
                 values.put(DBHelper.row_created, created);
 
                 //Create Condition if Title and Detail is empty

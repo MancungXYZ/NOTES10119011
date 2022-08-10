@@ -79,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_sign_up"
-        android:layout_marginLeft="75dp"
+        android:layout_marginLeft="65dp"
         android:layout_marginTop="200dp"
         android:text="Sudah memiliki akun?"
         android:textColor="@color/google_grey"
