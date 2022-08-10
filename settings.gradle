@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Tugas UTS Genap 2022 AKB IF-1 10119011"
+rootProject.name = "Uas AKB IF-1 10119011"
 include ':app'

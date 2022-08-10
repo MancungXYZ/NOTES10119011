@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tugasutsgenap2022akbif_110119011">
+    package="com.example.uas_akb_if1_10119011">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logooooo"
-        android:label="@string/app_name"
+        android:icon="@drawable/logocuy"
+        android:label="NOTES 10119011"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TugasUTSGenap2022AKBIF110119011">
+        android:theme="@style/Theme.UasAKBIF110119011">
+        <activity
+            android:name=".SignUpAc"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAct"
+            android:exported="false" />
         <activity
             android:name=".EditActivity"
             android:exported="false" />
@@ -23,6 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,6 +43,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

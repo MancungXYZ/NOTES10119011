@@ -3,40 +3,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/google_blue"
     tools:context=".AboutFragment">
 
     <ImageView
         android:id="@+id/tentang"
         android:layout_width="275dp"
         android:layout_height="275dp"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_baseline_app" />
+        android:src="@drawable/tentangapp" />
 
     <TextView
+        android:id="@+id/aplikasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/aplikasi"
-        android:text="Tentang Aplikasi"
-        android:textSize="30dp"
         android:layout_below="@id/tentang"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Tentang Aplikasi"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
+        android:textSize="30dp" />
 
     <TextView
+        android:id="@+id/tentangnew"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/aplikasi"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato"
+        android:textStyle="bold"
         android:text="Aplikasi ini dibuat untuk memenuhi salah satu tugas Aplikasi Komputasi Bergerak" />
 
     <TextView
         android:id="@+id/versi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/aplikasi"
+        android:layout_below="@+id/tentangnew"
         android:layout_marginTop="75dp"
         android:layout_centerHorizontal="true"
         android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato"
+        android:textSize="20dp"
+        android:textStyle="bold"
         android:text="Version 1.0.0" />
 </RelativeLayout>

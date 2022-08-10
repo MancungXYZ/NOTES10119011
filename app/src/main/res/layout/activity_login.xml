@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAct">
+
+    <TextView
+        android:id="@+id/textApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Mancung"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textApp"
+        android:layout_alignEnd="@+id/textApp"
+        android:text="Notes"
+        android:textSize="20dp"
+        android:textColor="@color/compliment"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/backwithborder"
+        android:inputType="textEmailAddress"
+        android:hint="Masukan email anda"
+        android:textColorHint="@color/google_grey"
+        android:layout_below="@+id/note"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/backwithborder"
+        android:inputType="textPassword"
+        android:hint="Pasword"
+        android:textColorHint="@color/google_grey"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/google_blue"
+        android:layout_alignEnd="@+id/password"/>
+
+    <TextView
+        android:id="@+id/memiliki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="200dp"
+        android:text="Belum memiliki akun?"
+        android:textColor="@color/google_grey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="200dp"
+        android:layout_toRightOf="@+id/memiliki"
+        android:text="Daftar Disini"
+        android:textColor="@color/compliment"
+        android:textStyle="bold"
+        android:onClick="pendaftaran"/>
+
+
+
+
+</RelativeLayout>

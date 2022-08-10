@@ -2,12 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:title="About"
+        android:title="Tentang Aplikasi"
         android:id="@+id/aboutFragment"
-        android:icon="@drawable/ic_baseline_person_24"/>
+        android:icon="@drawable/ic_baseline_info_24"/>
     <item
         android:title="Mancung Note"
         android:id="@+id/noteFragment"
         android:icon="@drawable/ic_baseline_note_add_24"/>
+
+    <item
+        android:title="Profile Mahasiswa"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/keluarFragment"
+        android:icon="@drawable/ic_baseline_account_box_24"/>
 
 </menu>
